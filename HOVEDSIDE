@@ -1,37 +1,36 @@
 -----HTML------
 ---- NAV-BAR ----
-<div class="Exam">
+<div class="naviagtionBar">
     <nav>
         <h2> <span class ="Vegas"> <strong>
           VEGAS </span>
           <span class="Elope">ELOPE</span>
         </h2> </strong>
   
-        <div class="Navbox">
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">WEDDING</a></li>
-          <li><a href="#">DIVORCE</a></li>
-          <li><a href="#">VISIT</a></li>
-             <li><a href="#">GALLERY</a></li>
-                <li><a href="#">ABOUT US</a></li>
-        </ul>
+        <div class="navBox">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">WEDDING</a></li>
+              <li><a href="#">DIVORCE</a></li>
+              <li><a href="#">BLIND WEDDING</a></li>
+              <li><a href="#">HONEYMOON</a></li>
+              <li><a href="#">ABOUT US</a></li>
+            </ul>
         </div>
-      </nav>
-    </div>
+    </nav>
 </div>
 
 
 ----CSS----
 
-.Exam {
+.navigationBar{
   height: 100vh;
   width: 100vw;
   background-color: #ef1c1c;
   opacity: 0.9;
 }
 
-nav {
+nav{
   position: relative;
   top: 10px;
   display: flex;
