@@ -2,9 +2,9 @@
 ---- NAV-BAR ----
 <div class="naviagtionBar">
     <nav>
-        <h2> <span class ="Vegas"> <strong>
+        <h2> <span class ="vegas"> <strong>
           VEGAS </span>
-          <span class="Elope">ELOPE</span>
+          <span class="elope">ELOPE</span>
         </h2> </strong>
   
         <div class="navBox">
@@ -38,7 +38,7 @@ nav{
   justify-content: space-between;
 }
 
-.Navbox {
+.navBox {
   position: relative;
   right: 40px;
   border: 7px;
@@ -62,7 +62,7 @@ h2 {
   opacity: 1;
 }
 
-.Elope {
+.elope {
   color: #212121;
   text-shadow: 0 0 10px white;
   font-family: "brush script MT", cursive;
