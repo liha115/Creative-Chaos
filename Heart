@@ -1,0 +1,75 @@
+---html---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="heart.css">
+    <title>Heart</title>
+</head>
+<body>
+    <div class="heart">
+        <div class="triangle"></div>
+        <div class="semiCircle1"></div>
+        <div class="semiCircle2"></div>
+    </div>
+</body>
+</html>
+
+---css---
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    transform: rotate(0deg);
+    transform-origin: 0 100%;
+    animation: beat 500ms infinite alternate;
+}
+.semiCircle1 {
+    position: absolute;
+    top: 58.7%;
+    left: 138.8%;
+    width: 114px;
+    height: 70px;
+    background-color: #c70000;
+    border-radius: 150px 150px 0 0;
+}
+.triangle {
+    position: absolute;
+    top: 74%;
+    left: 164%;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #c70000;
+    transform:  translateX(-50%) rotate(63.95deg);
+}
+.semiCircle2 {
+    position: absolute;
+    top: 58.7%;
+    left: 30.3%;
+    width: 114px;
+    height: 70px;
+    background-color: #c70000;
+    border-radius: 150px 150px 0 0;
+}
+
+@keyframes beat {
+    from {
+        transform: rotate(0deg) scale(1.2);
+    }
+    to {
+        transform: rotate(0deg) scale(1.1);
+    }
+}
+
