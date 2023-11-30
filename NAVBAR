@@ -1,4 +1,4 @@
-HTML:
+HTML (HUSK Å GÅ I <A> TAGGEN OG BYTT ID="ACTIVE" TIL DIN SIDE)
     <div class="naviagtionBar">
         <nav>
             <a href="homepage.html"> <h2> <span class ="vegas"> <strong>
@@ -7,33 +7,37 @@ HTML:
             </h2> </strong> </a>
           
             <div class="navBox">
-                 <ul>
-                    <li><a href="homepage.html">HOME</a></li>
-                    <li><a href="weddingpage.html">WEDDING</a></li>
-                    <li><a href="divorcepage.html">DIVORCE</a></li>
-                    <li><a href="blindWeddingpage.html">BLIND WEDDING</a></li>
-                    <li><a href="honeymoonpage.html">HONEYMOON</a></li>
-                    <li><a href="aboutuspage.html">ABOUT US</a></li>
-                </ul>
+
+                    <a id="active" class="navElement" href="homepage.html">HOME</a>
+                    <a  class="navElement" href="weddingpage.html">WEDDING</a>
+                    <a class="navElement" href="divorcepage.html">DIVORCE</a>
+                    <a class="navElement" href="blindWeddingpage.html">BLIND WEDDING</a>
+                    <a class="navElement" href="honeymoonpage.html">HONEYMOON</a>
+                   <a class="navElement" href="aboutuspage.html">ABOUT US</a>
+                   
             </div>
         </nav>
     </div>
-
 CSS:
 .navigationBar{
     max-height: 100%;
     max-width: 100%;
-  }
+}
   
-  nav{
+nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+    flex-direction: row;
+}
   
-  .navBox {
+.navBox{
     position: fixed;
-    left: 17%;
+    left: 16%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     top: 1%;
     border: 10px;
     border-style: double;
@@ -42,11 +46,11 @@ CSS:
     border-color: #edc967;
     box-shadow: 0 5px 10px #edc967, inset 0 0 20px #edc967, 0 0 20px #ef1c1c, inset 0 0 10px #ef1c1c, 0 0 5px black, inset 0 0 20px white;
     opacity: 1;
-    font-size: 19px;
     cursor: default;
-  }
+    width: 82%;
+}
   
-  h2 {
+h2{
     position: fixed;
     top: 1%;
     left: 1%;
@@ -55,37 +59,41 @@ CSS:
     border-style: double;
     border-radius: 50px;
     background-color: rgba(245, 245, 245, 0.433);
-    font-size: 30px;
+    font-size: 27px;
     opacity: 1;
     color: rgba(255, 34, 0, 0.885);
     box-shadow: inset 0 0 10px #b84444, 0 0 20px rgba(255, 34, 0, 0.885), inset 0 0 10px rgba(255, 34, 0, 0.885), 0 0 10px #edc967, inset 0 0 6px #edc967;
-  }
+}
 
-  .elope {
+.elope{
     color: #212121;
     text-shadow: 0 0 10px white;
     font-family: "brush script MT", cursive;
-  }
+}
   
-  nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 4px 40px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  nav ul li a {
+.navElement{
+    text-decoration: none;
+    font-size: 1.5vw;
     color: black;
     text-shadow: 2px 1px 5px white;
     text-decoration: none;
     font-family: sans-serif;
-    font-weight: bolder;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     transition-timing-function: ease-in-out;
     transition: 1s;
+}
+
+.navElement:hover {
+    color: rgb(255, 252, 252);
+    text-shadow: 1px 2px 3px #b84444, 0 0 4px red, 1px 1px 5px #edc967;
+}
+
+#active {
+    color: white;
 }
 nav ul li a:hover {
     color: rgb(255, 252, 252);
