@@ -1,0 +1,38 @@
+HTML (putt nederst så kommer den over alle elementer, men ikke under nav bar i html) 
+    <div id="heartPic">
+        <img src="homepages_heart.png" alt="redHeart">
+    </div>
+
+CSS: 
+#heartPic {
+    position: absolute;
+    bottom: 145%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 20%;
+    opacity: .9;
+    filter: drop-shadow(0 0 20px white) drop-shadow(0 0 4px rgba(0, 0, 255, 0.559));
+    animation: beatingHeart;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3.8s;
+}
+
+@keyframes beatingHeart {
+    0% {
+        width: 20%;
+        filter: drop-shadow(0 0 20px white) drop-shadow(0 0 4px rgba(0, 0, 255, 0.559));
+
+    }
+    50% {
+        width: 22%;
+        filter: drop-shadow(0 0 20px white)  drop-shadow(0 0 2px rgba(128, 0, 128, 0.04)) drop-shadow(0 0 20px rgba(0, 0, 255, 0.559))drop-shadow(0 0 30px red);
+    }
+    100% {
+        width: 20%;
+        filter: drop-shadow(0 0 20px white) drop-shadow(0 0 4px rgba(0, 0, 255, 0.559));
+    
+    }
+}
