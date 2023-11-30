@@ -1,0 +1,416 @@
+ --- HTML ---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blindwedding.css">
+    <title>Vegas Elope - Blind Wedding</title>
+</head>
+
+<body class="box">
+    <h1 class="H1">
+        BLIND WEDDING
+   </h1>
+
+    <div class="withBlind">
+            <img src="images/withBlind.png" alt="withBlind">
+            <img src="images/withoutBlind.png" class="changePic" alt="withoutBliind">
+    </div>
+  
+    <div class="infoBox">
+        Love is blind, but your happiness isn't! 🎩💘👰 
+        <br>
+        At Vegas Elope, we're matchmakers with a mission: to find your perfect weirdo. Because let's face it, normal is overrated 💌✨
+        <br>
+        Get your love passport! Take our <strong>quick questionnaire</strong> and dive into the blindfolded adventure of finding your match. 
+        <br>
+        No fuss, just fun! 💑🌟
+    </div>
+
+    <div class="checkBox">
+        <label class="q1">If you could travel anywhere right now, where would that be?
+        </label>
+        <input placeholder="Your destination" id="yourDest"/>
+        <br>
+        <label class="q1"> How tall do you want your other half to be?
+            <label class="a1"><input type="checkbox"> 
+                150-160cm
+            </label>
+            <label class="a1"> <input type="checkbox">
+                160-170cm
+            </label>
+            <label class="a1"> <input type="checkbox">
+                170-180cm
+            </label>
+            <label class="a1"> <input type="checkbox">
+                180-190cm
+            </label>
+        </label>
+        <br>
+        <label class="q1"> Which eye color can you imagine getting lost in?
+            <label class="a1"> <input type="checkbox">
+                Blue
+            </label>
+            <label class="a1"> <input type="checkbox">
+                Brown
+            </label>
+            <label class="a1"> <input type="checkbox">
+                Green
+            </label>
+            <label class="a1"> <input type="checkbox">
+                Black
+            </label>
+            <br>
+        <label class="q1">  Would you go for someone who can make any meal taste gourmet or someone with the ability to choose the perfect movie every time?
+            <label class="a1"> <input type="checkbox">
+                A - Gourmet Meal
+            </label>
+            <label class="a1"> <input type="checkbox">
+                B - Perfect Movie
+            </label>
+        </label>
+        <button class="submit">SUBMIT</button>
+    </div>
+
+    <div class="heart">
+        <div class="triangle"></div>
+        <div class="semiCircle1"></div>
+        <div class="semiCircle2"></div>
+    </div>
+
+    <div id="heartPic">
+        <img src="images/homepages_heart.png" alt="redHeart">
+    </div>
+
+    <div class="naviagtionBar">
+        <nav>
+            <a href="homepage.html"> <h2> <span class ="vegas"> <strong>
+                  VEGAS </span>
+                <span class="elope">ELOPE</span>
+            </h2> </strong> </a>
+          
+            <div class="navBox">
+
+                    <a class="navElement" href="homepage.html">HOME</a>
+                    <a class="navElement" href="weddingpage.html">WEDDING</a>
+                    <a class="navElement" href="divorcepage.html">DIVORCE</a>
+                    <a id="active" class="navElement" href="blindWeddingpage.html">BLIND WEDDING</a>
+                    <a class="navElement" href="honeymoonpage.html">HONEYMOON</a>
+                   <a class="navElement" href="aboutuspage.html">ABOUT US</a>
+                   
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
+
+--- CSS ---
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffdab9;  
+    font-family: sans-serif;
+}
+
+/* NavigationBar */
+
+.navigationBar{
+    max-height: 100%;
+    max-width: 100%;
+}
+  
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+  
+.navBox{
+    position: fixed;
+    left: 16%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    top: 1%;
+    border: 10px;
+    border-style: double;
+    border-radius: 50px;
+    padding: 5px;
+    border-color: #edc967;
+    box-shadow: 0 5px 10px #edc967, inset 0 0 20px #edc967, 0 0 20px #ef1c1c, inset 0 0 10px #ef1c1c, 0 0 5px black, inset 0 0 20px white;
+    opacity: 1;
+    cursor: default;
+    width: 82%;
+}
+  
+h2{
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    border: 10px;
+    padding: 5px;
+    border-style: double;
+    border-radius: 50px;
+    background-color: rgba(245, 245, 245, 0.433);
+    font-size: 27px;
+    opacity: 1;
+    color: rgba(255, 34, 0, 0.885);
+    box-shadow: inset 0 0 10px #b84444, 0 0 20px rgba(255, 34, 0, 0.885), inset 0 0 10px rgba(255, 34, 0, 0.885), 0 0 10px #edc967, inset 0 0 6px #edc967;
+}
+
+.elope{
+    color: #212121;
+    text-shadow: 0 0 10px white;
+    font-family: "brush script MT", cursive;
+}
+  
+.navElement{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: black;
+    text-shadow: 2px 1px 5px white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    transition-timing-function: ease-in-out;
+    transition: 1s;
+}
+
+.navElement:hover {
+    color: rgb(255, 252, 252);
+    text-shadow: 1px 2px 3px #b84444, 0 0 4px red, 1px 1px 5px #edc967;
+}
+
+#active {
+    color: white;
+}
+
+/* Heart-Sticker */
+
+#heartPic {
+    position: absolute;
+    bottom: 145%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 20%;
+    opacity: .9;
+    filter: drop-shadow(0 0 20px white) drop-shadow(0 0 4px rgba(0, 0, 255, 0.559));
+    animation: beatingHeart;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3.8s;
+}
+
+@keyframes beatingHeart {
+    0% {
+        width: 20%;
+        filter: drop-shadow(0 0 20px white) drop-shadow(0 0 4px rgba(0, 0, 255, 0.559));
+
+    }
+    50% {
+        width: 22%;
+        filter: drop-shadow(0 0 20px white)  drop-shadow(0 0 2px rgba(128, 0, 128, 0.04)) drop-shadow(0 0 20px rgba(0, 0, 255, 0.559))drop-shadow(0 0 30px red);
+    }
+    100% {
+        width: 20%;
+        filter: drop-shadow(0 0 20px white) drop-shadow(0 0 4px rgba(0, 0, 255, 0.559));
+    
+    }
+}
+
+/* Header */
+
+.H1{
+    position: absolute;
+    top: 110px;
+    padding: 5px;
+    text-align: center;
+    font-size: 72px;
+    font-family: garamond, serif;
+    color: #fff;
+    background-color: peachpuff; 
+    text-shadow: 4px 10px 20px #b84444, 0 0 4px red, 1px 1px 5px #edc967;
+    cursor: default; 
+    animation: spacing 1.5s forwards normal;
+}
+@keyframes spacing {
+   0% {
+    border-color: #ffffff00;
+   }
+   100% {
+    letter-spacing: 50px;
+    border-bottom: 3px solid;
+    border-color: #ffffff;
+   }
+}
+
+/* Info Box */
+
+.infoBox {
+    position: absolute;
+    text-align: center;
+    top: 300px;
+    left: 710px;
+    height: 250px;
+    width: 550px;
+    border: double 4px;
+    box-shadow: inset 1px 1px 20px #926f34, inset 0 0 70px #ffffff, inset 0 0 40px #ff0000, 0 0 20px #ffffff, 0 0 20px red, 0 0 10px #926f34, 0 0 20px #ff89baa6, 0 0 20px #7e0839a6;
+    padding: 20px;
+    margin: 20px;
+    font-size: 22px;
+    cursor: default;
+    background-color: #ff89ba71;
+    border: outset;
+    border-color: #d0176177;
+    border-width: 4px;
+    border-radius: 5%;
+    letter-spacing: 1.1px;
+    line-height: 33px;
+}
+
+
+/* Hover Picture */
+
+.withBlind {
+    position: absolute;
+    top: 30px;
+    left: 2%;
+    width: 30px;
+    height: auto;
+    transform: scale(0.5);
+    display: flex;
+    opacity: 1;
+}
+.withBlind .changePic {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.withBlind:hover .changePic {
+    display: inline;
+}
+
+/* Heart */
+
+.heart {
+    position: absolute;
+    top: 325px;
+    left: 16%;
+    width: 100px;
+    height: 90px;
+    transform: rotate(0deg);
+    transform-origin: 0 100%;
+    animation: beat 1000ms infinite alternate;
+    
+}
+.semiCircle1 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 14px;
+    height: 7px;
+    background-color: #c70000;
+    border-radius: 150px 150px 0 0;
+}
+.triangle {
+    position: absolute;
+    top: 51%;
+    left: 44.5%;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 21px solid #c70000;
+    transform:  translateX(-50%) rotate(63deg);
+}
+.semiCircle2 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 14px;
+    height: 7px;
+    background-color: #c70000;
+    border-radius: 150px 150px 0 0;
+}
+
+@keyframes beat {
+    from {
+        transform: rotate(40deg) scale(1.0);
+    }
+    to {
+        transform: rotate(0deg) scale(0);
+    }
+}
+ 
+/* Check Box */
+
+.submit {
+    position: absolute;
+    right: 10%;
+    border-color: #ff0000;
+    height: 30px;
+}
+.checkBox {
+    position: absolute;
+    top: 630px;
+    left: 710px;
+    height: 630px;
+    width: 550px;
+    border: double 4px;
+    box-shadow: inset 1px 1px 20px #926f34, inset 0 0 70px #ffffff, inset 0 0 40px #ff0000, 0 0 20px #ffffff, 0 0 20px #ff0000, 0 0 10px #926f34, 0 0 20px #ff89baa6, 0 0 20px #7e0839a6;
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+    cursor: default;
+    background-color: #ff89ba71;
+    border: outset;
+    border-color: #d0176177;
+    border-width: 4px;
+    border-radius: 5%;
+    letter-spacing: 1.1px;
+}
+.checkBox:hover {
+    box-shadow: 0 0 20px #d465a7;
+}
+
+label {display: block; padding:4px; }
+input{ display: flex }
+
+.q1 {
+    font-weight: bold;
+}
+.a1 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 5px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+#yourDest {
+    padding: 8px;
+    margin: 8px;
+    
+}
+
+
