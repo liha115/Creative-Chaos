@@ -1,0 +1,384 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* navigasjons bar */
+.navigationBar{
+    height: 100%;
+    width: 100%;
+}
+  
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+  
+.navBox{
+    position: fixed;
+    left: 16%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    top: 1%;
+    border: 10px;
+    border-style: double;
+    border-radius: 50px;
+    padding: 5px;
+    border-color: #edc967;
+    box-shadow: 0 5px 10px #edc967, inset 0 0 20px #edc967, 0 0 20px #ef1c1c, inset 0 0 10px #ef1c1c, 0 0 5px black, inset 0 0 20px white;
+    opacity: 1;
+    cursor: default;
+    width: 82%;
+}
+  
+h2{
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    border: 10px;
+    padding: 5px;
+    border-style: double;
+    border-radius: 50px;
+    background-color: rgba(245, 245, 245, 0.433);
+    font-size: 27px;
+    opacity: 1;
+    color: rgba(255, 34, 0, 0.885);
+    box-shadow: inset 0 0 10px #b84444, 0 0 20px rgba(255, 34, 0, 0.885), inset 0 0 10px rgba(255, 34, 0, 0.885), 0 0 10px #edc967, inset 0 0 6px #edc967;
+}
+
+.elope{
+    color: #212121;
+    text-shadow: 0 0 10px white;
+    font-family: "brush script MT", cursive;
+}
+  
+.navElement{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: black;
+    text-shadow: 2px 1px 5px white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    transition-timing-function: ease-in-out;
+    transition: 1s;
+}
+
+.navElement:hover {
+    color: rgb(255, 252, 252);
+    text-shadow: 1px 2px 3px #b84444, 0 0 4px red, 1px 1px 5px #edc967;
+}
+
+#active {
+    color: rgb(255, 255, 255);
+}
+
+/* bakgrunnsbilde */
+#pictureHomePage {
+    overflow: hidden;
+    border-bottom: 10px ridge #f9f295;
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* boksen foran bakgrunnsbildet */
+#frontpageBox {
+    height: 33%;
+    width: 26%;
+    background-color: #ff89bab5;
+    border: outset;
+    border-color: #d0176177;
+    border-width: 4px;
+    border-radius: 5%;
+    position: relative;
+    bottom: 45vh;
+    left: 5vw;
+}
+
+/* teksten i boksen foran bakgrunnsbildet */
+h4 {
+    position: relative;
+    left: 2%;
+    font-size: 4vw;
+    letter-spacing: 1vw;
+    line-height: 1.3;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #dfbd69, 0 0 42px #dfbd69, 0 0 102px #926f34, 10px 10px 160px #926f34, 1px 1px 10px rgb(224, 7, 7), 2px 2px 5px black, -5px -5px 10px red;
+    color: rgb(255, 255, 255);
+    font-family:'Courier New', Courier, monospace;
+    cursor: default;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* nedre del av siden */
+#bottomPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: peachpuff;
+    position: relative;
+    top: 81vh;
+}
+
+/* teksten nedere del */
+.bottomText {
+    background-color: rgb(253, 204, 161);
+    border: 10px double;
+    border-color: #926f34;
+    box-shadow: inset 1px 1px 20px #926f34, inset 0 0 70px white, inset 0 0 40px red, 0 0 20px white, 0 0 10px red, 0 0 10px #926f34, 0 0 20px #ff89baa6, 0 0 20px #7e0839a6;
+    height: 35vh; 
+    width: 40vw;
+    position: absolute; 
+    top: 13%;
+    left: 10%;
+    cursor: default;
+    overflow: auto;
+}
+
+.homepageText{
+    position: relative;
+    padding-left: 15px;
+    padding-top: 12px;
+    color: black;
+    font-size: 25px;
+    font-family: garamond, serif;
+    font-weight: 900;
+    line-height: 1.3;
+    text-shadow: 1px 1px 1px #fff, 0 0 2px #dfbd69, 0 0 4px #dfbd69, 0 0 5px #926f34, 0 0 6px #926f34;
+}
+
+/* bilder nederst */
+#imageBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: 60%;
+}
+
+.linkImage {
+    position: relative;
+    width: 15%;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 7px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    opacity: .7;
+}
+
+.linkImage:hover {
+    box-shadow: 0 0 20px red, 0 0 20px #faf398, 0 0 40px #926f34, 0 0 30px white, 0 0 70px pink;
+    width: 16vw;
+    opacity: .9;
+  }
+
+/* teksten på bildene nederst */
+.clickableText {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 0 5px #926f34, 0 0 3px white, 0 0 9px #ef1c1c;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.clickableText:hover {
+    opacity: 1;
+    letter-spacing: 5px;
+}
+
+/* ---------- ting som skal være foran med animasjon ---------- */
+
+/* discount box */
+#discountBox {
+    position: fixed;
+    right: 3%;
+    bottom: -30px;
+    height: 0;
+    width: 350px;
+    background-color: #ff89baa6;
+    border: 10px double;
+    border-radius: 5px;
+    border-color: rgba(255, 0, 0, 0.901);
+    box-shadow: 0 0 20px red, inset 0 0 20px red, 0 0 30px white, inset 0 0 10px white, 0 0 30px #a67d01, inset 0 0 40px #a67d01;
+    animation: discountBox, discountBox;
+    animation-duration: .6s, .6s;
+    animation-delay: 5s, 15s;
+    animation-fill-mode: forwards;
+    animation-direction: normal, reverse;
+}
+
+/* animasjon discount div */
+@keyframes discountBox {
+    0% {
+        height: 0;
+    }
+    80% {
+        height: 335px;
+    }
+    100% {
+        height: 320px;
+    }
+}
+
+/* discount div skrift */
+.discountText {
+    position: absolute;
+    text-align: center;
+    cursor: default;
+    font-family: serif;
+}
+
+/* overskriften i discount div */
+#discountHead {
+    font-size: 35px;
+    color: white;
+    text-shadow: 1px 1px 3px red, 1px 1px 5px black;
+    letter-spacing: 2px;
+}
+
+/* teksten i discount div */
+#discountInfo{
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    opacity: 0;
+    font-size: 40px;
+    width: 100%;
+    text-shadow: 1px 2px 4px #a67d01, 1px 1px 5px #926f34;
+    animation: discountText, discountText;
+    animation-duration: .3s, .3s;
+    animation-delay: 5.7s, 14.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-direction: normal, reverse;
+}
+
+/* animasjon discount info text */ 
+@keyframes discountText {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        width: 90%;
+        opacity: .5;
+    }
+    100% {
+        width: 95%;
+        font-size: 35px;
+        letter-spacing: 3px;
+        opacity: 1;
+    }
+}
+
+/* hjerte og animasjon hjerte */
+#heartPic {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 20%;
+    opacity: .9;
+    filter: drop-shadow(0 0 20px white) drop-shadow(0 0 4px rgba(0, 0, 255, 0.559));
+    animation: beatingHeart;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3.8s;
+}
+
+@keyframes beatingHeart {
+    0% {
+        width: 20%;
+        filter: drop-shadow(0 0 20px white) drop-shadow(0 0 4px rgba(0, 0, 255, 0.559));
+
+    }
+    50% {
+        width: 22%;
+        filter: drop-shadow(0 0 20px white)  drop-shadow(0 0 2px rgba(128, 0, 128, 0.04)) drop-shadow(0 0 20px rgba(0, 0, 255, 0.559))drop-shadow(0 0 30px red);
+    }
+    100% {
+        width: 20%;
+        filter: drop-shadow(0 0 20px white) drop-shadow(0 0 4px rgba(0, 0, 255, 0.559));
+    
+    }
+}
+
+/* brud og brudgdo med animasjon */
+.brideAndGroom {
+    filter: drop-shadow(1px 1px 2px black) drop-shadow(0 0 2px white);
+}
+
+#bride {
+    width: 110px;
+    position: absolute;
+    top: 14%;
+    right: 0;
+    animation: brideWalk;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+}
+
+@keyframes brideWalk {
+    100% {
+        right: 40%;
+        display:none;
+    }
+    
+}
+
+#groom {
+    position: absolute;
+    top: 14%;
+    left: 0;
+    width: 164px;
+    animation: groomWalk;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+}
+
+@keyframes groomWalk {
+    100% {
+        left: 38%;
+        display: none;
+    }
+}
