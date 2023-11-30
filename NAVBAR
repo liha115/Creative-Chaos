@@ -1,10 +1,15 @@
 HTML (HUSK Å GÅ I <A> TAGGEN OG BYTT ID="ACTIVE" TIL DIN SIDE)
-    <div class="naviagtionBar">
+    <div class="navigationBar">
         <nav>
-            <a href="homepage.html"> <h2> <span class ="vegas"> <strong>
-                  VEGAS </span>
-                <span class="elope">ELOPE</span>
-            </h2> </strong> </a>
+
+            <a href="homepage.html">
+                <h2>
+                  <span class="vegas">
+                    <strong>VEGAS</strong>
+                  </span>
+                  <span class="elope">ELOPE</span>
+                </h2>
+            </a>
           
             <div class="navBox">
 
@@ -14,14 +19,14 @@ HTML (HUSK Å GÅ I <A> TAGGEN OG BYTT ID="ACTIVE" TIL DIN SIDE)
                     <a class="navElement" href="blindWeddingpage.html">BLIND WEDDING</a>
                     <a class="navElement" href="honeymoonpage.html">HONEYMOON</a>
                    <a class="navElement" href="aboutuspage.html">ABOUT US</a>
-                   
+
             </div>
         </nav>
     </div>
 CSS:
 .navigationBar{
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
 }
   
 nav{
@@ -93,5 +98,5 @@ h2{
 }
 
 #active {
-    color: white;
+    color: rgb(255, 255, 255);
 }
